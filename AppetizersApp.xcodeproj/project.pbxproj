@@ -8,17 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		6262EB542A9A1B6F00D17FB8 /* AppetizersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB532A9A1B6F00D17FB8 /* AppetizersAppApp.swift */; };
-		6262EB562A9A1B6F00D17FB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB552A9A1B6F00D17FB8 /* ContentView.swift */; };
+		6262EB562A9A1B6F00D17FB8 /* AppetizersTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB552A9A1B6F00D17FB8 /* AppetizersTabView.swift */; };
 		6262EB582A9A1B7000D17FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6262EB572A9A1B7000D17FB8 /* Assets.xcassets */; };
 		6262EB5B2A9A1B7000D17FB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6262EB5A2A9A1B7000D17FB8 /* Preview Assets.xcassets */; };
+		6262EB662A9A1F3A00D17FB8 /* AppetizersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB652A9A1F3A00D17FB8 /* AppetizersListView.swift */; };
+		6262EB682A9A1F4100D17FB8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB672A9A1F4100D17FB8 /* AccountView.swift */; };
+		6262EB6A2A9A1F7400D17FB8 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB692A9A1F7400D17FB8 /* OrderView.swift */; };
+		6262EB6E2A9A2B7D00D17FB8 /* Appetizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB6D2A9A2B7D00D17FB8 /* Appetizers.swift */; };
+		6262EB702A9A304400D17FB8 /* AppetizerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB6F2A9A304400D17FB8 /* AppetizerListItemView.swift */; };
+		6262EB742A9A73D500D17FB8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB732A9A73D500D17FB8 /* APIService.swift */; };
+		6262EB762A9A73FC00D17FB8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB752A9A73FC00D17FB8 /* APIError.swift */; };
+		6262EB792A9A744700D17FB8 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB782A9A744700D17FB8 /* APIBuilder.swift */; };
+		6262EB7B2A9A745E00D17FB8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB7A2A9A745E00D17FB8 /* HTTPMethod.swift */; };
+		6262EB7D2A9A74BB00D17FB8 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB7C2A9A74BB00D17FB8 /* APIEndPoints.swift */; };
+		6262EB7F2A9A750C00D17FB8 /* APIHostURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB7E2A9A750C00D17FB8 /* APIHostURL.swift */; };
+		6262EB812A9A752900D17FB8 /* HeaderKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB802A9A752900D17FB8 /* HeaderKeys.swift */; };
+		6262EB832A9A754B00D17FB8 /* ParameterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB822A9A754B00D17FB8 /* ParameterKeys.swift */; };
+		6262EB872A9A765C00D17FB8 /* AppetizersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB862A9A765C00D17FB8 /* AppetizersListViewModel.swift */; };
+		6262EB8D2A9A7BD600D17FB8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB8C2A9A7BD600D17FB8 /* ActivityIndicator.swift */; };
+		6262EB8F2A9A7BFE00D17FB8 /* ActivityIndicatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB8E2A9A7BFE00D17FB8 /* ActivityIndicatorModifier.swift */; };
+		6262EB922A9A7EEB00D17FB8 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB912A9A7EEB00D17FB8 /* AlertItem.swift */; };
+		6262EB952A9A81C300D17FB8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB942A9A81C300D17FB8 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6262EB502A9A1B6F00D17FB8 /* AppetizersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppetizersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6262EB532A9A1B6F00D17FB8 /* AppetizersAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersAppApp.swift; sourceTree = "<group>"; };
-		6262EB552A9A1B6F00D17FB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6262EB552A9A1B6F00D17FB8 /* AppetizersTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersTabView.swift; sourceTree = "<group>"; };
 		6262EB572A9A1B7000D17FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6262EB5A2A9A1B7000D17FB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6262EB652A9A1F3A00D17FB8 /* AppetizersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersListView.swift; sourceTree = "<group>"; };
+		6262EB672A9A1F4100D17FB8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		6262EB692A9A1F7400D17FB8 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		6262EB6D2A9A2B7D00D17FB8 /* Appetizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizers.swift; sourceTree = "<group>"; };
+		6262EB6F2A9A304400D17FB8 /* AppetizerListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListItemView.swift; sourceTree = "<group>"; };
+		6262EB732A9A73D500D17FB8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6262EB752A9A73FC00D17FB8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		6262EB782A9A744700D17FB8 /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
+		6262EB7A2A9A745E00D17FB8 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		6262EB7C2A9A74BB00D17FB8 /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		6262EB7E2A9A750C00D17FB8 /* APIHostURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHostURL.swift; sourceTree = "<group>"; };
+		6262EB802A9A752900D17FB8 /* HeaderKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderKeys.swift; sourceTree = "<group>"; };
+		6262EB822A9A754B00D17FB8 /* ParameterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterKeys.swift; sourceTree = "<group>"; };
+		6262EB862A9A765C00D17FB8 /* AppetizersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersListViewModel.swift; sourceTree = "<group>"; };
+		6262EB8C2A9A7BD600D17FB8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		6262EB8E2A9A7BFE00D17FB8 /* ActivityIndicatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorModifier.swift; sourceTree = "<group>"; };
+		6262EB912A9A7EEB00D17FB8 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		6262EB942A9A81C300D17FB8 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +87,11 @@
 		6262EB522A9A1B6F00D17FB8 /* AppetizersApp */ = {
 			isa = PBXGroup;
 			children = (
+				6262EB712A9A737B00D17FB8 /* Infrastructure */,
 				6262EB532A9A1B6F00D17FB8 /* AppetizersAppApp.swift */,
-				6262EB552A9A1B6F00D17FB8 /* ContentView.swift */,
+				6262EB552A9A1B6F00D17FB8 /* AppetizersTabView.swift */,
+				6262EB6B2A9A2B6C00D17FB8 /* Domain */,
+				6262EB612A9A1E7100D17FB8 /* Features */,
 				6262EB572A9A1B7000D17FB8 /* Assets.xcassets */,
 				6262EB592A9A1B7000D17FB8 /* Preview Content */,
 			);
@@ -65,6 +104,141 @@
 				6262EB5A2A9A1B7000D17FB8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6262EB612A9A1E7100D17FB8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB622A9A1E7C00D17FB8 /* AppetizersList */,
+				6262EB632A9A1E8A00D17FB8 /* Account */,
+				6262EB642A9A1E8E00D17FB8 /* Order */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6262EB622A9A1E7C00D17FB8 /* AppetizersList */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB852A9A764F00D17FB8 /* ViewModel */,
+				6262EB842A9A764B00D17FB8 /* View */,
+			);
+			path = AppetizersList;
+			sourceTree = "<group>";
+		};
+		6262EB632A9A1E8A00D17FB8 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB672A9A1F4100D17FB8 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		6262EB642A9A1E8E00D17FB8 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB692A9A1F7400D17FB8 /* OrderView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		6262EB6B2A9A2B6C00D17FB8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB6C2A9A2B7300D17FB8 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6262EB6C2A9A2B7300D17FB8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB6D2A9A2B7D00D17FB8 /* Appetizers.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6262EB712A9A737B00D17FB8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB932A9A81BA00D17FB8 /* Extensions */,
+				6262EB902A9A7EE500D17FB8 /* HelperModels */,
+				6262EB882A9A7B1400D17FB8 /* UtilityViews */,
+				6262EB772A9A743800D17FB8 /* APIBuilder */,
+				6262EB722A9A73A100D17FB8 /* APIService */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		6262EB722A9A73A100D17FB8 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB732A9A73D500D17FB8 /* APIService.swift */,
+				6262EB752A9A73FC00D17FB8 /* APIError.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		6262EB772A9A743800D17FB8 /* APIBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB782A9A744700D17FB8 /* APIBuilder.swift */,
+				6262EB7A2A9A745E00D17FB8 /* HTTPMethod.swift */,
+				6262EB7C2A9A74BB00D17FB8 /* APIEndPoints.swift */,
+				6262EB7E2A9A750C00D17FB8 /* APIHostURL.swift */,
+				6262EB802A9A752900D17FB8 /* HeaderKeys.swift */,
+				6262EB822A9A754B00D17FB8 /* ParameterKeys.swift */,
+			);
+			path = APIBuilder;
+			sourceTree = "<group>";
+		};
+		6262EB842A9A764B00D17FB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB652A9A1F3A00D17FB8 /* AppetizersListView.swift */,
+				6262EB6F2A9A304400D17FB8 /* AppetizerListItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6262EB852A9A764F00D17FB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB862A9A765C00D17FB8 /* AppetizersListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6262EB882A9A7B1400D17FB8 /* UtilityViews */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB8B2A9A7BC700D17FB8 /* LoadingIndicator */,
+			);
+			path = UtilityViews;
+			sourceTree = "<group>";
+		};
+		6262EB8B2A9A7BC700D17FB8 /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB8C2A9A7BD600D17FB8 /* ActivityIndicator.swift */,
+				6262EB8E2A9A7BFE00D17FB8 /* ActivityIndicatorModifier.swift */,
+			);
+			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		6262EB902A9A7EE500D17FB8 /* HelperModels */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB912A9A7EEB00D17FB8 /* AlertItem.swift */,
+			);
+			path = HelperModels;
+			sourceTree = "<group>";
+		};
+		6262EB932A9A81BA00D17FB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB942A9A81C300D17FB8 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +311,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6262EB562A9A1B6F00D17FB8 /* ContentView.swift in Sources */,
+				6262EB952A9A81C300D17FB8 /* Color+Extension.swift in Sources */,
+				6262EB702A9A304400D17FB8 /* AppetizerListItemView.swift in Sources */,
+				6262EB832A9A754B00D17FB8 /* ParameterKeys.swift in Sources */,
+				6262EB682A9A1F4100D17FB8 /* AccountView.swift in Sources */,
+				6262EB562A9A1B6F00D17FB8 /* AppetizersTabView.swift in Sources */,
+				6262EB7B2A9A745E00D17FB8 /* HTTPMethod.swift in Sources */,
 				6262EB542A9A1B6F00D17FB8 /* AppetizersAppApp.swift in Sources */,
+				6262EB662A9A1F3A00D17FB8 /* AppetizersListView.swift in Sources */,
+				6262EB872A9A765C00D17FB8 /* AppetizersListViewModel.swift in Sources */,
+				6262EB8F2A9A7BFE00D17FB8 /* ActivityIndicatorModifier.swift in Sources */,
+				6262EB6E2A9A2B7D00D17FB8 /* Appetizers.swift in Sources */,
+				6262EB742A9A73D500D17FB8 /* APIService.swift in Sources */,
+				6262EB6A2A9A1F7400D17FB8 /* OrderView.swift in Sources */,
+				6262EB922A9A7EEB00D17FB8 /* AlertItem.swift in Sources */,
+				6262EB792A9A744700D17FB8 /* APIBuilder.swift in Sources */,
+				6262EB762A9A73FC00D17FB8 /* APIError.swift in Sources */,
+				6262EB7F2A9A750C00D17FB8 /* APIHostURL.swift in Sources */,
+				6262EB812A9A752900D17FB8 /* HeaderKeys.swift in Sources */,
+				6262EB8D2A9A7BD600D17FB8 /* ActivityIndicator.swift in Sources */,
+				6262EB7D2A9A74BB00D17FB8 /* APIEndPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
