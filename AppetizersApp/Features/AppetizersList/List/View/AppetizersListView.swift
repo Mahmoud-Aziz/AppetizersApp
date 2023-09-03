@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct AppetizersListView: View {
- @StateObject private var viewModel: AppetizersListViewModel = AppetizersListViewModel()
-
+  @StateObject private var viewModel: AppetizersListViewModel = AppetizersListViewModel()
+  
   var body: some View {
     ZStack {
       NavigationView {
         List {
           ForEach(viewModel.appetizers, id: \.id) { appetizer in
             AppetizerListItemView(name: appetizer.name, price: appetizer.price, imageURL: appetizer.appetizerImageURL)
+              .onTapGesture {
+                viewModel.selectedAppetizer = appetizer
+              }
+              .sheet(isPresented: $viewModel.isPresentDetails) {
+                AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!)
+              }
           }
         }
         .navigationTitle("Appetizers")

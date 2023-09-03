@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6234B2482AA27D54002F1534 /* AppetizerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234B2472AA27D54002F1534 /* AppetizerDetailsView.swift */; };
+		6234B24A2AA27EB3002F1534 /* ImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234B2492AA27EB3002F1534 /* ImageLoaderView.swift */; };
+		6234B24C2AA3656E002F1534 /* NutrientsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234B24B2AA3656E002F1534 /* NutrientsDataView.swift */; };
 		6262EB542A9A1B6F00D17FB8 /* AppetizersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB532A9A1B6F00D17FB8 /* AppetizersAppApp.swift */; };
 		6262EB562A9A1B6F00D17FB8 /* AppetizersTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262EB552A9A1B6F00D17FB8 /* AppetizersTabView.swift */; };
 		6262EB582A9A1B7000D17FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6262EB572A9A1B7000D17FB8 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6234B2472AA27D54002F1534 /* AppetizerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailsView.swift; sourceTree = "<group>"; };
+		6234B2492AA27EB3002F1534 /* ImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderView.swift; sourceTree = "<group>"; };
+		6234B24B2AA3656E002F1534 /* NutrientsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsDataView.swift; sourceTree = "<group>"; };
 		6262EB502A9A1B6F00D17FB8 /* AppetizersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppetizersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6262EB532A9A1B6F00D17FB8 /* AppetizersAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersAppApp.swift; sourceTree = "<group>"; };
 		6262EB552A9A1B6F00D17FB8 /* AppetizersTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersTabView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6234B2452AA27D3F002F1534 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6262EB852A9A764F00D17FB8 /* ViewModel */,
+				6262EB842A9A764B00D17FB8 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6234B2462AA27D45002F1534 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				6234B2472AA27D54002F1534 /* AppetizerDetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		6262EB472A9A1B6F00D17FB8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +142,8 @@
 		6262EB622A9A1E7C00D17FB8 /* AppetizersList */ = {
 			isa = PBXGroup;
 			children = (
-				6262EB852A9A764F00D17FB8 /* ViewModel */,
-				6262EB842A9A764B00D17FB8 /* View */,
+				6234B2462AA27D45002F1534 /* Details */,
+				6234B2452AA27D3F002F1534 /* List */,
 			);
 			path = AppetizersList;
 			sourceTree = "<group>";
@@ -212,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				6262EB8B2A9A7BC700D17FB8 /* LoadingIndicator */,
+				6234B2492AA27EB3002F1534 /* ImageLoaderView.swift */,
+				6234B24B2AA3656E002F1534 /* NutrientsDataView.swift */,
 			);
 			path = UtilityViews;
 			sourceTree = "<group>";
@@ -320,6 +345,7 @@
 				6262EB542A9A1B6F00D17FB8 /* AppetizersAppApp.swift in Sources */,
 				6262EB662A9A1F3A00D17FB8 /* AppetizersListView.swift in Sources */,
 				6262EB872A9A765C00D17FB8 /* AppetizersListViewModel.swift in Sources */,
+				6234B2482AA27D54002F1534 /* AppetizerDetailsView.swift in Sources */,
 				6262EB8F2A9A7BFE00D17FB8 /* ActivityIndicatorModifier.swift in Sources */,
 				6262EB6E2A9A2B7D00D17FB8 /* Appetizers.swift in Sources */,
 				6262EB742A9A73D500D17FB8 /* APIService.swift in Sources */,
@@ -330,7 +356,9 @@
 				6262EB7F2A9A750C00D17FB8 /* APIHostURL.swift in Sources */,
 				6262EB812A9A752900D17FB8 /* HeaderKeys.swift in Sources */,
 				6262EB8D2A9A7BD600D17FB8 /* ActivityIndicator.swift in Sources */,
+				6234B24C2AA3656E002F1534 /* NutrientsDataView.swift in Sources */,
 				6262EB7D2A9A74BB00D17FB8 /* APIEndPoints.swift in Sources */,
+				6234B24A2AA27EB3002F1534 /* ImageLoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

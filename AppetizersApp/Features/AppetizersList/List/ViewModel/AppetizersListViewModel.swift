@@ -13,6 +13,13 @@ class AppetizersListViewModel: ObservableObject {
   @Published var appetizersImages: [Data] = []
   @Published var isLoading: Bool = false
   @Published var alertItem: AlertItem?
+  @Published var isPresentDetails: Bool = false 
+
+  var selectedAppetizer: Appetizer? {
+    didSet {
+      isPresentDetails.toggle()
+    }
+  }
   
   init(apiService: APIServiceProtocol = APIService()) {
     self.apiService = apiService
