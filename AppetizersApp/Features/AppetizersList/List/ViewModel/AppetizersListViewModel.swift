@@ -17,7 +17,7 @@ class AppetizersListViewModel: ObservableObject {
 
   var selectedAppetizer: Appetizer? {
     didSet {
-      isPresentDetails.toggle()
+      isPresentDetails = true 
     }
   }
   

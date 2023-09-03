@@ -13,18 +13,18 @@ struct AppetizersListView: View {
   var body: some View {
     ZStack {
       NavigationView {
-        List(viewModel.appetizers) { appetizer in
+        List(viewModel.appetizers, id: \.id) { appetizer in
           AppetizerListItemView(name: appetizer.name, price: appetizer.price, imageURL: appetizer.appetizerImageURL)
             .onTapGesture {
               viewModel.selectedAppetizer = appetizer
-              viewModel.isPresentDetails = true
             }
         }
+        
         .navigationTitle("Appetizers")
         .onAppear {
           viewModel.getAppetizers()
         }
-      }.disabled(viewModel.isPresentDetails)
+      }
       
       if viewModel.isPresentDetails {
         AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!, isPresented: $viewModel.isPresentDetails)

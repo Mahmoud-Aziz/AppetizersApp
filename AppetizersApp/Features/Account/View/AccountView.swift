@@ -8,28 +8,23 @@
 import SwiftUI
 
 struct AccountView: View {
+  
+@StateObject var viewModel: AccountViewModel = AccountViewModel()
+  
   var body: some View {
-    @State var name: String = ""
-    @State var lastName: String = ""
-    @State var email: String = ""
-    @State var birthday: Date = Date()
-    
-    @State var isExtraNapkinsToggled: Bool = false
-    @State var isFrequentRefillsToggled: Bool = false
-    
-    NavigationView {
-      Form {
-        PersonalInfoSectionView(
-          name: $name,
-          lastName: $lastName,
-          email: $email,
-          birthday: $birthday)
-        
-        RequestsSectionView(
-          isExtraNapkinsToggled: $isExtraNapkinsToggled,
-          isFrequentRefillsToggled: $isFrequentRefillsToggled)
+      NavigationView {
+        Form {
+          PersonalInfoSectionView(
+            name: $viewModel.name,
+            lastName: $viewModel.lastName,
+            email: $viewModel.email,
+            birthday: $viewModel.birthday)
+          
+          RequestsSectionView(
+            isExtraNapkinsToggled: $viewModel.isExtraNapkinsToggled,
+            isFrequentRefillsToggled: $viewModel.isFrequentRefillsToggled)
+        }.navigationTitle("Account")
       }
-    }
   }
 }
 
@@ -50,6 +45,7 @@ struct PersonalInfoSectionView: View {
       TextField("Name", text: $name)
       TextField("Last Name", text: $lastName)
       TextField("Email", text: $email)
+        .keyboardType(.emailAddress)
       DatePicker("Birthday", selection: $birthday, displayedComponents: .date)
       
       ZStack {
@@ -75,7 +71,11 @@ struct RequestsSectionView: View {
   var body: some View {
     Section(header: Text("Requests")) {
       Toggle("Extra Napkins", isOn: $isExtraNapkinsToggled)
+        .toggleStyle(SwitchToggleStyle(tint: .primaryColor))
+      
       Toggle("Frequent Refills", isOn: $isFrequentRefillsToggled)
+        .toggleStyle(SwitchToggleStyle(tint: .primaryColor))
+
     }
   }
 }
