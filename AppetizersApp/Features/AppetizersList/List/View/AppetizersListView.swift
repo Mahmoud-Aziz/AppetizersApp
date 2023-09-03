@@ -20,7 +20,7 @@ struct AppetizersListView: View {
                 viewModel.selectedAppetizer = appetizer
               }
               .sheet(isPresented: $viewModel.isPresentDetails) {
-                AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!)
+                AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!, isPresented: $viewModel.isPresentDetails)
               }
           }
         }
