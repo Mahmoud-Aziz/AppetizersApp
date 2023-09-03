@@ -110,9 +110,9 @@
 		6262EB522A9A1B6F00D17FB8 /* AppetizersApp */ = {
 			isa = PBXGroup;
 			children = (
-				6262EB712A9A737B00D17FB8 /* Infrastructure */,
 				6262EB532A9A1B6F00D17FB8 /* AppetizersAppApp.swift */,
 				6262EB552A9A1B6F00D17FB8 /* AppetizersTabView.swift */,
+				6262EB712A9A737B00D17FB8 /* Infrastructure */,
 				6262EB6B2A9A2B6C00D17FB8 /* Domain */,
 				6262EB612A9A1E7100D17FB8 /* Features */,
 				6262EB572A9A1B7000D17FB8 /* Assets.xcassets */,
