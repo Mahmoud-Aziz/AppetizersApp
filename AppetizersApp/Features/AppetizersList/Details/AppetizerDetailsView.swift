@@ -30,7 +30,7 @@ struct AppetizerDetailsView: View {
         
         Spacer()
         
-        OrderButtonView(appetizer: appetizer)
+        OrderButtonView(title: "$\(appetizer.price, specifier: "%.2f") - Order Now")
         
         Spacer()
           .frame(height: 16)
@@ -79,6 +79,7 @@ struct AppetizerDescriptionView: View {
       Text(appetizer.description)
         .font(.body)
         .fontWeight(.ultraLight)
+        .multilineTextAlignment(.center)
         .padding()
       
       
@@ -96,15 +97,15 @@ struct AppetizerDescriptionView: View {
 
 struct OrderButtonView: View {
   
-  let appetizer: Appetizer
+  let title: LocalizedStringKey
   
   var body: some View {
     Button {
       print("tapped")
     } label: {
-      Text("$\(appetizer.price, specifier: "%.2f") - Order Now")
+      Text(title)
         .foregroundColor(.white)
-        .frame(width: 200, height: 50)
+        .frame(width: 260, height: 50)
         .background(Color.primaryColor)
         .cornerRadius(8)
     }

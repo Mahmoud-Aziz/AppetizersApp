@@ -24,7 +24,7 @@ struct AppetizersListView: View {
         .onAppear {
           viewModel.getAppetizers()
         }
-      }
+      }.disabled(viewModel.isPresentDetails)
       
       if viewModel.isPresentDetails {
         AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!, isPresented: $viewModel.isPresentDetails)
