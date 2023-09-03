@@ -19,7 +19,7 @@ struct ImageLoaderView: View {
       switch phase {
       case .empty:
         ProgressView()
-          .frame(width: 120, height: 90)
+          .frame(width: imageWidth, height: imageHeight)
 
       case .success(let image):
         image.resizable()
@@ -30,7 +30,7 @@ struct ImageLoaderView: View {
         Image("food-placeholder")
           .resizable()
           .aspectRatio(contentMode: .fit)
-          .frame(width: 120, height: 90)
+          .frame(width: imageWidth, height: imageHeight)
       @unknown default:
         EmptyView()
       }

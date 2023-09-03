@@ -13,24 +13,29 @@ struct AppetizersListView: View {
   var body: some View {
     ZStack {
       NavigationView {
-        List {
-          ForEach(viewModel.appetizers, id: \.id) { appetizer in
-            AppetizerListItemView(name: appetizer.name, price: appetizer.price, imageURL: appetizer.appetizerImageURL)
-              .onTapGesture {
-                viewModel.selectedAppetizer = appetizer
-              }
-              .sheet(isPresented: $viewModel.isPresentDetails) {
-                AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!, isPresented: $viewModel.isPresentDetails)
-              }
-          }
+        List(viewModel.appetizers) { appetizer in
+          AppetizerListItemView(name: appetizer.name, price: appetizer.price, imageURL: appetizer.appetizerImageURL)
+            .onTapGesture {
+              viewModel.selectedAppetizer = appetizer
+              viewModel.isPresentDetails = true
+            }
         }
         .navigationTitle("Appetizers")
         .onAppear {
           viewModel.getAppetizers()
         }
       }
+      
+      if viewModel.isPresentDetails {
+        AppetizerDetailsView(appetizer: viewModel.selectedAppetizer!, isPresented: $viewModel.isPresentDetails)
+      }
+      
       if viewModel.isLoading {
         LoadingView(isAnimating: $viewModel.isLoading)
+      }
+    }.onTapGesture {
+      if viewModel.isPresentDetails {
+        viewModel.isPresentDetails = false 
       }
     }
     .alert(item: $viewModel.alertItem) { alertItem in
